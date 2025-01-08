@@ -1,0 +1,30 @@
+.container-header {
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(255, 200, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-header h1 {
+    font-size: 3rem;
+    padding-top: 3px;
+    padding-left: 50px;
+}
+
+.container-list {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    list-style: none; 
+    margin-right: 10rem;
+    width: 100%; 
+}
+
+.container-list li {
+    padding: 0 2rem;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
