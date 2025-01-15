@@ -40,11 +40,8 @@
 
 .product-card .card-text strong {
     font-size: 1.1rem;
-    color: #333;
+    color: #333333;
 }
-
-
-
 
 @media (max-width: 768px) {
     .product-card img {

@@ -1,7 +1,26 @@
 .slide-item {
     width: 100%;
+    max-width: 100%;
     height: 400px;
     object-fit: cover; 
   }
+
+  
+  @media screen and (max-width: 768px) {
+    .slide-item {
+      width: 100%;
+      max-width: 1000%;
+      height: auto; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .slide-item {
+      width: 100%;
+      max-width: 1000%;
+      height: auto;
+    }
+  }
+  
 
   
