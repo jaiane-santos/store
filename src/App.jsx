@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import ProductsByCategory from "./pages/ProductsByCategory/ProductsByCategory";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path="/" element={<Home />} /> 
           <Route path="/category/:category" element={<ProductsByCategory />} /> {/* Inclua o parâmetro de categoria */}
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -1,0 +1,21 @@
+/* Estilos do Footer */
+.footer {
+    background-color:  rgb(255, 200, 0); /* Cor de fundo escura */
+    color: #333; /* Texto branco */
+    padding: 20px 0; /* Padding superior e inferior */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer .container {
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+  }
+  
+  /* Responsividade: garante que o footer se ajuste bem em telas pequenas */
+  @media (max-width: 575px) {
+    .footer {
+      padding: 15px 0; /* Ajusta o padding em telas pequenas */
+    }
+  }
+  
