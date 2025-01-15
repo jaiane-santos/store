@@ -28,7 +28,7 @@ function Home() {
     }, []);
 
     if (loading) {
-        return <div>Carregando...</div>;
+        return <div>Loanding...</div>;
     }
 
     if (error) {
@@ -39,6 +39,7 @@ function Home() {
         <>
           <Slider />
           <CardCategories />
+        
         <div className='product-container'>
             {products.map((product) => (
                 <Card key={product.id} className="product-card">
@@ -50,6 +51,7 @@ function Home() {
                 </Card>
             ))}
         </div>
+    
         </>
     );
 }

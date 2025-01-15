@@ -26,7 +26,7 @@ function ProductsByCategory() {
   }
 
   return (
-    <div className="container">
+    <div className="container-product-category">
       {products.map((product) => (
         <Card key={product.id} className="product-card">
           <CardImg top width="100%" src={product.image} alt={product.title} />

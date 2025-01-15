@@ -30,3 +30,30 @@
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
+
+
+@media (max-width: 768px) {
+  .categories-card {
+    width: 130px;
+    padding: 12px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-container {
+    padding: 1rem; 
+  }
+
+  .categories-card {
+    width: 120px;
+    padding: 12px; 
+  }
+
+  .icon-container {
+    font-size: 1.5rem; 
+  }
+
+  .card-title {
+    font-size: 10px; 
+}
+}
