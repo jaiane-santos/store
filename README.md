@@ -30,3 +30,17 @@ O backend utilizado neste projeto é uma API pública fornecida pelo [Fake Store
 
    ```bash
    git clone https://github.com/username/ecommerce-react.git
+
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd store
+
+3. Instale as dependências:
+    ```bash
+    npm install
+   
+4. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+
+
