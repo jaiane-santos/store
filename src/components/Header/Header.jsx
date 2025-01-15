@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import './Header.css';
 
 function Header() {
@@ -14,12 +15,15 @@ function Header() {
     setDropdownOpen(!dropdownOpen);
   };
 
-  // Fetch categories from API
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products/categories')
-      .then((res) => res.json())
-      .then((data) => setCategories(data))
-      .catch((error) => console.error('Erro ao carregar categorias:', error));
+    axios
+      .get('https://fakestoreapi.com/products/categories')
+      .then((response) => {
+        setCategories(response.data);
+      })
+      .catch((error) => {
+        console.error('Erro ao carregar categorias:', error);
+      });
   }, []);
 
   return (
