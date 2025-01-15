@@ -42,3 +42,16 @@ O backend utilizado neste projeto é uma API pública fornecida pelo [Fake Store
 4. Inicie o servidor de desenvolvimento:
     ```bash
     npm run dev
+
+# Contribuições
+Sinta-se à vontade para contribuir com melhorias ou relatar problemas. Se quiser contribuir, basta seguir os passos abaixo:
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua nova funcionalidade (git checkout -b feature/nova-funcionalidade).
+3. Faça suas alterações e faça commit (git commit -am 'Adiciona nova funcionalidade').
+4. Envie para o repositório remoto (git push origin feature/nova-funcionalidade).
+5. Abra um pull request.
+
+
+
+    
