@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,16 +40,18 @@ function Header() {
           </button>
           {dropdownOpen && (
             <ul className="dropdown-menu">
-              {categories.length > 0 ? (
-                categories.map((category, index) => (
-                  <li key={index} className="dropdown-item">
+            {categories.length > 0 ? (
+              categories.map((category, index) => (
+                <li key={index} className="dropdown-item">
+                  <Link to={`/category/${category}`}>
                     {category.charAt(0).toUpperCase() + category.slice(1)}
-                  </li>
-                ))
-              ) : (
-                <li className="dropdown-item">Carregando...</li>
-              )}
-            </ul>
+                  </Link>
+                </li>
+              ))
+            ) : (
+              <li className="dropdown-item">Carregando...</li>
+            )}
+          </ul>
           )}
         </li>
         <li>Editar Produto</li>

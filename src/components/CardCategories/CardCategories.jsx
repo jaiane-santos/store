@@ -1,5 +1,6 @@
 import { Card, CardBody, CardTitle } from "reactstrap";
 import { FaBox, FaTshirt, FaLaptop, FaGem } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./CardCategories.css";
 
 import { useEffect, useState } from "react";
@@ -15,12 +16,8 @@ function CardCategories() {
       .then((response) => {
         setCategories(response.data);
       })
-      .catch((error) => {
-        console.error("Erro ao carregar categorias:", error);
-      });
   }, []);
 
- 
   const getCategoryIcon = (category) => {
     switch (category) {
       case "electronics":
@@ -30,7 +27,7 @@ function CardCategories() {
       case "men's clothing":
         return <FaTshirt />;
       case "women's clothing":
-        return <GiLargeDress   />;
+        return <GiLargeDress />;
       default:
         return <FaBox />;
     }
@@ -39,14 +36,16 @@ function CardCategories() {
   return (
     <div className="categories-container">
       {categories.map((category, index) => (
-        <Card key={index} className="categories-card">
-          <CardBody>
-            <div className="icon-container">{getCategoryIcon(category)}</div>
-            <CardTitle tag="h5">
-              {category.charAt(0).toUpperCase() + category.slice(1)}
-            </CardTitle>
-          </CardBody>
-        </Card>
+        <Link key={index} to={`/category/${category}`}> 
+          <Card className="categories-card">
+            <CardBody>
+              <div className="icon-container">{getCategoryIcon(category)}</div>
+              <CardTitle tag="h5">
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </CardTitle>
+            </CardBody>
+          </Card>
+        </Link>
       ))}
     </div>
   );

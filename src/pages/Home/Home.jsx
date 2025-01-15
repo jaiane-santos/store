@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import { Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 import Slider from '../../components/Slider/Slider';
+import CardCategories from '../../components/CardCategories/CardCategories';
 
 function Home() {
     const [products, setProducts] = useState([]);
@@ -35,8 +36,10 @@ function Home() {
     }
 
     return (
+        <>
+          <Slider />
+          <CardCategories />
         <div className='product-container'>
-            <Slider />
             {products.map((product) => (
                 <Card key={product.id} className="product-card">
                     <CardImg  top width="100%" src={product.image} alt={product.title} />
@@ -47,6 +50,7 @@ function Home() {
                 </Card>
             ))}
         </div>
+        </>
     );
 }
 
