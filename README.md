@@ -42,5 +42,3 @@ O backend utilizado neste projeto é uma API pública fornecida pelo [Fake Store
 4. Inicie o servidor de desenvolvimento:
     ```bash
     npm run dev
-
-
