@@ -1,0 +1,28 @@
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .categories-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .icon-container {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .categories-card:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
