@@ -21,13 +21,13 @@ function CardCategories() {
   const getCategoryIcon = (category) => {
     switch (category) {
       case "electronics":
-        return <FaLaptop />;
+        return <FaLaptop/>;
       case "jewelery":
-        return <FaGem />;
+        return <FaGem style={{ color: 'lightblue' }} />;
       case "men's clothing":
-        return <FaTshirt />;
+        return <FaTshirt style={{color: 'lightgreen'}} />;
       case "women's clothing":
-        return <GiLargeDress />;
+        return <GiLargeDress style={{color: 'pink'}} />;
       default:
         return <FaBox />;
     }

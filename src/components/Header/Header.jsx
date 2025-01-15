@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,9 +23,6 @@ function Header() {
       .then((response) => {
         setCategories(response.data);
       })
-      .catch((error) => {
-        console.error('Erro ao carregar categorias:', error);
-      });
   }, []);
 
   return (
@@ -36,7 +34,7 @@ function Header() {
       <ul className={`container-list ${menuOpen ? 'show-menu' : ''}`}>
         <li className="dropdown">
           <button className="dropdown-button" onClick={toggleDropdown}>
-            Categoria ▼
+            Category ▼
           </button>
           {dropdownOpen && (
             <ul className="dropdown-menu">
@@ -49,13 +47,13 @@ function Header() {
                 </li>
               ))
             ) : (
-              <li className="dropdown-item">Carregando...</li>
+              <li className="dropdown-item">Loanding...</li>
             )}
           </ul>
           )}
         </li>
-        <li>Editar Produto</li>
-        <li>Carrinho</li>
+        <li>Edit Product</li>
+        <li><FaShoppingCart /></li>
       </ul>
     </div>
   );
