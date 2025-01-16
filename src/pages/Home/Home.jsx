@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import './Home.css';
 import axios from 'axios';
 
-import { Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 import Slider from '../../components/Slider/Slider';
 import CardCategories from '../../components/CardCategories/CardCategories';
+import ProductCard from '../../components/CardProduct/ProductCard'; 
 
 function Home() {
     const [products, setProducts] = useState([]);
@@ -39,7 +39,6 @@ function Home() {
             </div>
         );
     }
-    
 
     if (error) {
         return <div className='message'>{error}</div>;
@@ -52,16 +51,9 @@ function Home() {
         
         <div className='product-container'>
             {products.map((product) => (
-                <Card key={product.id} className="product-card">
-                    <CardImg  top width="100%" src={product.image} alt={product.title} />
-                    <CardBody>
-                        <CardTitle tag="h5">{product.title}</CardTitle>
-                        <CardText><strong>${product.price}</strong></CardText>
-                    </CardBody>
-                </Card>
+                <ProductCard key={product.id} product={product} />  
             ))}
         </div>
-    
         </>
     );
 }
