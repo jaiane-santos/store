@@ -19,3 +19,58 @@
   align-items: center;
   margin-top: 30px;
 }
+
+
+@media (max-width: 768px) {
+  .category{
+    height: auto;
+    min-height: 85vh;
+    max-height: auto;
+
+}
+}
+
+@media (max-width: 820px) {
+  .category{
+    height: auto;
+    min-height: 87vh;
+    max-height: auto;
+
+}
+}
+
+@media (max-width: 834px) {
+  .category{
+    height: auto;
+    min-height: 87vh;
+    max-height: auto;
+
+}
+}
+
+@media (max-width: 800px) {
+  .category{
+    height: auto;
+    min-height: 88vh;
+    max-height: auto;
+
+}
+}
+
+@media (max-width: 884px) {
+  .category{
+    height: auto;
+    min-height: 88vh;
+    max-height: auto;
+
+}
+}
+
+@media (max-width: 480px) {
+  .category{
+    height: auto;
+    min-height: 83vh;
+    max-height: auto;
+
+}
+}
