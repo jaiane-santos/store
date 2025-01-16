@@ -24,7 +24,8 @@ O backend utilizado neste projeto é uma API pública fornecida pelo [Fake Store
 - **Interface Responsiva**: Com o uso do Bootstrap, a interface é totalmente responsiva e se adapta a diferentes tamanhos de tela.
 
 ## Endereço de Hospedagem
-O projeto está hospedado em: storewebonline.netlify.app
+O projeto está hospedado em: storewebonline.netlify.app 
+<br>
 Você pode acessá-lo para explorar todas as funcionalidades implementadas.
 
 ## Instalação
