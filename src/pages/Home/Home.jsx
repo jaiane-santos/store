@@ -48,7 +48,6 @@ function Home() {
         <>
           <Slider />
           <CardCategories />
-        
         <div className='product-container'>
             {products.map((product) => (
                 <ProductCard key={product.id} product={product} />  

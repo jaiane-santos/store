@@ -40,11 +40,18 @@ function ProductDetail() {
   }
 
   return (
-    <div className="product-detail">
-      <h2>{product.title}</h2>
-      <img src={product.image} alt={product.title} />
-      <p>{product.description}</p>
-      <p><strong>${product.price}</strong></p>
+    <div className="product-detail-container">
+      <div className="product-detail-card">
+        <div className="product-image">
+          <img src={product.image} alt={product.title} />
+        </div>
+        <div className="product-info">
+          <h1 className="product-title">{product.title}</h1>
+          <p className="product-price">$ {product.price}</p>
+          <p className="product-description">{product.description}</p>
+          <button className="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+      </div>
     </div>
   );
 }
