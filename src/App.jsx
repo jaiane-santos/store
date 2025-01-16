@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes> 
           <Route exact path="/" element={<Home />} /> 
-          <Route path="/category/:category" element={<ProductsByCategory />} /> {/* Inclua o parâmetro de categoria */}
+          <Route path="/category/:category" element={<ProductsByCategory />} /> 
         </Routes>
         <Footer />
       </div>

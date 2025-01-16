@@ -28,11 +28,21 @@ function Home() {
     }, []);
 
     if (loading) {
-        return <div>Loanding...</div>;
+        return (
+            <div className='message'>
+                <div className="loading-dots">
+                    <strong>Loading</strong>
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </div>
+            </div>
+        );
     }
+    
 
     if (error) {
-        return <div>{error}</div>;
+        return <div className='message'>{error}</div>;
     }
 
     return (
