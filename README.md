@@ -19,10 +19,13 @@ O backend utilizado neste projeto é uma API pública fornecida pelo [Fake Store
 ## Funcionalidades
 
 - **Página Inicial**: Exibição de uma lista de produtos com nome, imagem e preço.
-- **Carrinho de Compras**: Adicionar produtos ao carrinho e visualizar o resumo da compra.
 - **Detalhes do Produto**: Ao clicar em um produto, o usuário pode visualizar informações detalhadas sobre ele.
 - **Navegação**: Utiliza o `react-router-dom` para navegação entre páginas como "Home", "Detalhes", e "Carrinho".
 - **Interface Responsiva**: Com o uso do Bootstrap, a interface é totalmente responsiva e se adapta a diferentes tamanhos de tela.
+
+## Endereço de Hospedagem
+O projeto está hospedado em: storewebonline.netlify.app
+Você pode acessá-lo para explorar todas as funcionalidades implementadas.
 
 ## Instalação
 
